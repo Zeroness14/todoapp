@@ -5,8 +5,8 @@ import './todos.css';
 
 const todos = [
   { title: 'HTML', isDone: false },
-  { title: 'JS', isDone: true },
-  { title: 'React', isDone: true },
+  { title: 'JS', isDone: false },
+  { title: 'React', isDone: false },
 ];
 
 const deleteTodo = (index) => {
