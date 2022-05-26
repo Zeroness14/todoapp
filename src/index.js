@@ -2,12 +2,11 @@ import { log } from './utils';
 import { printTodos } from './print-todos';
 import { init as initForm } from './form';
 import './todos.css';
+import { get as getStorage } from './storage';
 
-const todos = [
-  { title: 'HTML', isDone: false },
-  { title: 'JS', isDone: false },
-  { title: 'React', isDone: false },
-];
+const todos = getStorage() || [];
+
+
 
 const deleteTodo = (index) => {
   console.log('delete', index);
